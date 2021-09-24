@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const nodemailer = require('nodemailer');
-const port = 8080;
+const port = process.env.PORT;
 
 // Middleware
 app.use(cors());
